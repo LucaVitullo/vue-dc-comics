@@ -1,6 +1,5 @@
 <template>
   <div class="Footer">
-    <h1>{{ msg }}</h1>
  
   </div>
 </template>
@@ -14,6 +13,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
