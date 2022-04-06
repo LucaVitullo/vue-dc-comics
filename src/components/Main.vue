@@ -50,7 +50,7 @@ main{
 }
 .sezione1{
     display: flex;
-    height: 80px;
+    height: 124px;
     color: white;
     justify-content: space-evenly;
 }

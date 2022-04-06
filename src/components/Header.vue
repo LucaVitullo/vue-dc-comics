@@ -7,16 +7,9 @@
     <div class="header-right">
       <ul>
         <li>
-          <a href="">CHARACTERS</a>
-          <a href="">COMICS</a>
-          <a href="">MOVIES</a>
-         <a href="">TV</a>
-          <a href="">GAMES</a>
-          <a href="">COLLECTIBLES</a>
-         <a href="">VIDEOS</a>
-         <a href="">FANS</a>
-          <a href="">NEWS</a>
-         <a href="">SHOP</a>
+          <a href="" v-for="item in navLink" :key="item">
+            {{item}}
+          </a>
        </li>
      </ul>
 
@@ -31,9 +24,23 @@
 <script>
 export default {
   name: 'HeaderDiv',
-  props: {
-    msg: String
-  }
+  data() {
+    return{
+    navLink:[
+      "CHARACTERS",
+      "COMICS",
+      "MOVIES",
+      "TV",
+      "GAMES",
+      "COLLECTIBLES",
+      "VIDEOS",
+      "FANS",
+      "NEWS",
+      "SHOP",
+      ]
+
+    }
+  },
 }
 </script>
 
