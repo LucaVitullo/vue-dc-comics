@@ -2,7 +2,7 @@
 <main>
     <div class="sezione1">
         <div class="contents">
-            <h1>--Content goes here>--</h1>
+            <h1>-->Content goes here >-- </h1>
 
         </div>
     </div>
@@ -19,10 +19,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sezione1{
-    
+main{
     background-color: black;
+}
+.sezione1{
+    width: 70vw;
     color: white;
+}
+.contents{
+    display: flex;
+    justify-content: space-around;
 }
 
 </style>
