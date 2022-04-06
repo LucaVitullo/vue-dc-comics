@@ -10,23 +10,23 @@
         <div class="box-card">
             <div class="card">
                 <img src="../assets/buy-comics-digital-comics.png" alt="Digital-comics">
-                <span>DIGITAL COMICS</span>
+                <p>DIGITAL COMICS</p>
             </div>
             <div class="card">
                 <img src="../assets/buy-comics-merchandise.png" alt="Digital-comics">
-                <span>DC MERCHANDISE</span>
+                <p>DC MERCHANDISE</p>
             </div>
             <div class="card">
                 <img src="../assets/buy-comics-subscriptions.png" alt="Digital-comics">
-                <span>SUBSCRIPTION</span>
+                <p>SUBSCRIPTION</p>
             </div>
             <div class="card">
                 <img src="../assets/buy-comics-shop-locator.png" alt="Digital-comics">
-                <span>COMIC SHOP LOCATOR</span>
+                <p>COMIC SHOP LOCATOR</p>
             </div>
             <div class="card">
                 <img src="../assets/buy-dc-power-visa.svg" alt="Digital-comics">
-                <span>DC POWER</span>
+                <p>DC POWER</p>
             </div>
 
         </div>
@@ -80,8 +80,7 @@ main{
 }
 .card img{
     width: 50px;
+    margin-right: 10px;
 }
-.card span{
-    margin:20px;
-}
+
 </style>

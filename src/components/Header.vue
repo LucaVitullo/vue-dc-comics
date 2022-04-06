@@ -62,11 +62,11 @@ export default {
  text-decoration: none;
  margin-left: 15px;
   color: $text-color;
- padding-bottom: 20px;
+ padding-bottom: 43px;
 }
 .header-right li a:hover{
   color: blue;
-  border-bottom: 2px solid blue;
+  border-bottom: 3px solid blue;
 }
 
 

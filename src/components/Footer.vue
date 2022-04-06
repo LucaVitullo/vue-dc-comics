@@ -114,6 +114,10 @@ ul li a{
     color: gray;
     display: block;
     text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: white;
+    }
 }
 .contenitore-logo{
     background-image:url("../assets/dc-logo-bg.png");
