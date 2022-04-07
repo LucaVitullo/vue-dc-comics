@@ -1,13 +1,13 @@
 <template>
 <main>
-    <div class="jumbotron"></div>
-    <div class="sezione1">
-        <div class="contents">
-            <fumettiDc :fumetto='item' v-for="(item,index) in fumettiDc" :key="index"/>
+    <div class="jumbotron">
+        <button class="current-series">CURRENT SERIES</button>
 
-
-        </div>
     </div>
+        <FumettiDc :fumetto='DcComics'/>
+        <div class="more">
+            <button type="button">LOAD MORE</button>
+      </div>
     <div class="sezione2">
         <div class="box-card">
             <div class="card">
@@ -38,17 +38,17 @@
 </template>
 
 <script>
-import boxCard from '@/assets/data/dcComics';
-import fumettiDc from '@/components/fumettiDc.vue';
+import DcComics from '@/assets/data/DcComics';
+import FumettiDc from '@/components/FumettiDc';
 
 
 export default {
   name: 'MainDiv',
-    data(){
-    return {boxCard,};
+ data(){
+     return {DcComics,FumettiDc};
   },
   components:{
-      fumettiDc,
+      FumettiDc,
     },
 };
 </script>
@@ -57,40 +57,58 @@ export default {
 main{
     background-color: black;
 }
+.more{
+    text-align: center;
+}
+.more button{
+    background-color: #0282f9;
+    color: white;
+    border: 0;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.current-series{
+    color: white;
+    font-size: 2rem;
+    background-color: #0282f9;
+    position: absolute;
+    bottom: -25px;
+    left: 100px;
+    border: 0;
+    padding: 10px;
+
+}
 .jumbotron{
         background-image: url(../assets/jumbotron.jpg);
         height: 350px;
         background-size: cover;
+        position: relative;
 }
 .sezione1{
     display: flex;
-    height: 500px;
     color: white;
     justify-content: space-evenly;
-}
-.contents{
-    display: flex;
-    align-items: center;
-    width: 70%;
-
 }
 
 .sezione2{
     background-color: #0282f9;
     display: flex;
     justify-content: space-around;
+
 }
 .box-card{
     display: flex;
     width: 70%;
     padding: 30px;
+    column-gap: 50px;
 }
 .card{
     display: flex;
     align-items: center;
     color: white;
     font-size: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 .card img{
     width: 50px;
