@@ -2,7 +2,7 @@
 <main>
     <div class="sezione1">
         <div class="contents">
-            <h1>-->Content goes here >-- </h1>
+
 
         </div>
     </div>
@@ -50,9 +50,11 @@ main{
 }
 .sezione1{
     display: flex;
-    height: 124px;
+    height: 500px;
     color: white;
     justify-content: space-evenly;
+    background-image: url(../assets/jumbotron.jpg);
+    background-size: cover;
 }
 .contents{
     display: flex;
