@@ -1,7 +1,9 @@
 <template>
 <main>
+    <div class="jumbotron"></div>
     <div class="sezione1">
         <div class="contents">
+            <fumettiDc :fumetto='item' v-for="(item,index) in fumettiDc" :key="index"/>
 
 
         </div>
@@ -36,25 +38,35 @@
 </template>
 
 <script>
+import boxCard from '@/assets/data/dcComics';
+import fumettiDc from '@/components/fumettiDc.vue';
+
+
 export default {
   name: 'MainDiv',
-  props: {
-    msg: String
-  }
-}
+    data(){
+    return {boxCard,};
+  },
+  components:{
+      fumettiDc,
+    },
+};
 </script>
 
 <style lang="scss" scoped>
 main{
     background-color: black;
 }
+.jumbotron{
+        background-image: url(../assets/jumbotron.jpg);
+        height: 350px;
+        background-size: cover;
+}
 .sezione1{
     display: flex;
     height: 500px;
     color: white;
     justify-content: space-evenly;
-    background-image: url(../assets/jumbotron.jpg);
-    background-size: cover;
 }
 .contents{
     display: flex;
